@@ -1,0 +1,10 @@
+.room-list {
+  background-color: orange;
+  position: absolute;
+  top: 0px;
+  right: auto;
+  bottom: 0px;
+  left: 0px;
+  height: auto;
+  width: 16%;
+}

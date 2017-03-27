@@ -2,12 +2,34 @@
 <html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <title>Bloc Chat</title>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/chatroom.css">
 </head>
 <body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a ui-sref="landing" class="logo">
+          <img src="assets/images/bc-logo.png" alt="bloc jams logo" class="logo">
+        </a>
+        <div class="links-container">
+          <a ui-sref="landing" class="navbar-link">HOME</a>
+        </div>
+    </nav>
+
+    <section class="content-container">
+      <ui-view></ui-view>
+    </section>
+
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
     <script>
       // Initialize Firebase
@@ -20,6 +42,10 @@
       };
       firebase.initializeApp(config);
     </script>
-    <script src="/scripts/app.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/Room.js"></script>
+    <script src="scripts/controllers/LandingCtrl.js"></script>
+    <script src="scripts/controllers/ChatroomCtrl.js"></script>
 </body>
 </html>
