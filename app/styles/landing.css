@@ -1,0 +1,47 @@
+body.landing {
+}
+
+.hero-content {
+  position: relative;
+  min-height: 200px;
+}
+
+.hero-content .hero-title {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #0000FF;
+  text-shadow: 1px 1px 0px rgb(58,23,63);
+}
+
+.intro {
+  position: relative;
+}
+
+.instructions {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  opacity: 1;
+  -webkit-transform: scaleX(0.9) translateY(3rem);
+  -moz-transform: scaleX(0.9) translateY(3rem);
+  transform: scaleX(0.9) translateY(3rem);
+}
+
+.point {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.ion-chatbubbles {
+  color: #0000FF;
+  font-size: 5rem;
+}

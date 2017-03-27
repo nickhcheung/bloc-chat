@@ -1,0 +1,17 @@
+.text-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 100;
+}
+
+.text-bar .message-field {
+  position: relative;
+  width: 94%;
+}
+
+.text-bar .send {
+  position: relative;
+}

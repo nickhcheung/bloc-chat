@@ -8,10 +8,15 @@
       });
 
       $stateProvider
-        .state("main", {
+        .state("landing", {
           url: "/",
-          //controller: ,
-          //templateUrl:
+          controller: "LandingCtrl as landing",
+          templateUrl: "/templates/landing.html"
+        })
+        .state("chatroom", {
+          url: "/chatroom",
+          controller: "ChatroomCtrl as chatroom",
+          templateUrl: "/templates/chatroom.html"
         });
   };
 
