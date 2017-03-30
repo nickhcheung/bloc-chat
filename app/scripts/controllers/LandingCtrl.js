@@ -1,10 +1,9 @@
 (function(){
-  function LandingCtrl(Room){
+  function LandingCtrl(){
     this.heroTitle = "Welcome to Bloc Chat!";
-    this.rooms = Room.all;
   }
 
   angular
     .module("blocChat")
-    .controller("LandingCtrl", ["Room", LandingCtrl]);
+    .controller("LandingCtrl", LandingCtrl);
 })();

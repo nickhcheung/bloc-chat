@@ -1,0 +1,9 @@
+<div>
+  <h1 class="modal-header">Create Chatroom</h1>
+  <h2 class="create-instructions">Enter a name</h2>
+  <input type="text" name="roomname" class="text-box" ng-model="name">
+  <div class="button-container">
+    <button type="button" class="submit" ng-click="modal.submit(name)">Create</button>
+    <button type="button" class="cancel" ng-click="modal.cancel()">Cancel</button>
+  </div>
+</div>

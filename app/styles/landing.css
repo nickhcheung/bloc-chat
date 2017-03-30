@@ -4,6 +4,7 @@ body.landing {
 .hero-content {
   position: relative;
   min-height: 200px;
+  z-index: 0;
 }
 
 .hero-content .hero-title {

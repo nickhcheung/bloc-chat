@@ -1,0 +1,27 @@
+.modal {
+
+}
+
+.modal-header {
+  color: black;
+}
+
+.create-instructions {
+  color: red;
+}
+
+.text-box {
+  color: black;
+}
+
+.button-container {
+  color: blue;
+}
+
+.button-container .submit {
+  color: red;
+}
+
+.button-container .cancel {
+  color: red;
+}

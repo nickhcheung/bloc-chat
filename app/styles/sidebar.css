@@ -1,10 +1,19 @@
 .room-list {
   background-color: orange;
   position: absolute;
-  top: 0px;
+  top: 12%;
   right: auto;
   bottom: 0px;
   left: 0px;
   height: auto;
   width: 16%;
+  z-index: 1;
+}
+
+.room {
+  font-size: 40px;
+}
+
+.create {
+  background-color: blue;
 }
