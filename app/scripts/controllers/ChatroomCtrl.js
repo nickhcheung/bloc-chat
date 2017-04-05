@@ -1,8 +1,11 @@
 (function(){
-  function ChatroomCtrl(){
+  function ChatroomCtrl(Room, Message){
+    this.currentRoom = Room.getCurrentRoom();
+    this.messages = Message.getByRoomId(Room.currentRoom);
+    this.currentRoomName = Room.currentRoomName;
   }
 
   angular
     .module("blocChat")
-    .controller("ChatroomCtrl", ChatroomCtrl);
+    .controller("ChatroomCtrl", ["Room", "Message", ChatroomCtrl]);
 })();

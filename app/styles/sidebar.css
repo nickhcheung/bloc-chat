@@ -1,13 +1,10 @@
 .room-list {
-  background-color: orange;
-  position: absolute;
-  top: 12%;
-  right: auto;
-  bottom: 0px;
-  left: 0px;
-  height: auto;
-  width: 16%;
+  background-color: rgba(255,165,0, 0.2);
+  position: relative;
+  float: left;
+  height: 100vh;
   z-index: 1;
+  border: 2px solid yellow;
 }
 
 .room {
@@ -16,4 +13,5 @@
 
 .create {
   background-color: blue;
+  color: white;
 }

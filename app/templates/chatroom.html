@@ -1,10 +1,15 @@
 <ng-include src="'templates/sidebar.html'"></ng-include>
 
-<section class="messages-container">
-
+<section class="messages-container clearfix column two-thirds">
+  <h1 class="room-header" ng-click="chatroom.checkRoom()">{{ chatroom.currentRoomName }}</h1>
+  <div ng-repeat="message in chatroom.messages" class="repeated">
+    <p>{{ message.username }}</p>
+    <p>{{ message.content }}</p>
+    <p>{{ message.sentAt }}</p>
+  </div>
 </section>
 
-<section class="text-bar">
+<section class="text-bar clearfix column two-thirds">
   <input type="text" class="message-field">
   <button class="send">SEND</button>
 </section>

@@ -1,10 +1,13 @@
-body.landing {
+.landing {
+  position: relative;
+  border: 2px solid blue;
 }
 
 .hero-content {
   position: relative;
   min-height: 200px;
   z-index: 0;
+  border: 2px solid purple;
 }
 
 .hero-content .hero-title {
@@ -21,10 +24,6 @@ body.landing {
   letter-spacing: 0.2rem;
   color: #0000FF;
   text-shadow: 1px 1px 0px rgb(58,23,63);
-}
-
-.intro {
-  position: relative;
 }
 
 .instructions {

@@ -1,6 +1,6 @@
-<aside class="room-list" ng-controller="SidebarCtrl as sidebar">
+<aside class="room-list clearfix column third" ng-controller="SidebarCtrl as sidebar">
   <button type="button" class="create" ng-click="sidebar.addRoom()">Create Room</button>
   <div class="room" ng-repeat="room in sidebar.rooms">
-    <a ui-sref="chatroom">{{ room.$value }}</a>
+    <a ui-sref="chatroom" ng-click="sidebar.setCurrentRoom(room.$id); sidebar.setCurrentRoomName(room.$value); sidebar.reload()">{{ room.$value }}</a>
   </div>
 </aside>
