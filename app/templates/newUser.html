@@ -1,0 +1,8 @@
+<div class="username-form">
+  <h1 class="modal-header">Login</h1>
+  <h2 class="create-instructions">Enter a username</h2>
+  <input type="text" name="username" class="text-box" ng-model="name" required>
+  <div class="button-container">
+    <button type="submit" class="submit" ng-disabled="!name" ng-click="modal.createUsername(name)">Enter</button>
+  </div>
+</div>

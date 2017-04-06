@@ -3,9 +3,9 @@
 <section class="messages-container clearfix column two-thirds">
   <h1 class="room-header" ng-click="chatroom.checkRoom()">{{ chatroom.currentRoomName }}</h1>
   <div ng-repeat="message in chatroom.messages" class="repeated">
-    <p>{{ message.username }}</p>
-    <p>{{ message.content }}</p>
-    <p>{{ message.sentAt }}</p>
+    <p class="username">{{ message.username }}</p>
+    <p class="time">{{ message.sentAt }}</p>
+    <p class="message-content">{{ message.content }}</p>
   </div>
 </section>
 

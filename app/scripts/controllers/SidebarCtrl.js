@@ -6,7 +6,6 @@
       $uibModal.open({
         templateUrl: "/templates/modal.html",
         size: "lg",
-        keyboard: true,
         controller: "ModalCtrl as modal"
       });
     };
