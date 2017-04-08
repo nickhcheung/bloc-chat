@@ -15,11 +15,27 @@
   border: 1px solid black;
 }
 
+.messages-container .repeated .message-content {
+  clear: left;
+}
+
+.messages-container .repeated .username {
+  float: left;
+  padding-bottom: 1%;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.messages-container .repeated .time {
+  float: right;
+  font-size: 0.5rem;
+}
+
 .text-bar {
   position: relative;
   z-index: 100;
   border: 2px solid pink;
-  
+
 }
 
 .text-bar .message-field {

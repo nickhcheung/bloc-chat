@@ -4,12 +4,12 @@
   <h1 class="room-header" ng-click="chatroom.checkRoom()">{{ chatroom.currentRoomName }}</h1>
   <div ng-repeat="message in chatroom.messages" class="repeated">
     <p class="username">{{ message.username }}</p>
-    <p class="time">{{ message.sentAt }}</p>
+    <p class="time">{{ message.sentAt | date: "MMM d, y h:mm a" }}</p>
     <p class="message-content">{{ message.content }}</p>
   </div>
 </section>
 
 <section class="text-bar clearfix column two-thirds">
-  <input type="text" class="message-field">
-  <button class="send">SEND</button>
+  <input type="text" class="message-field" ng-model="message">
+  <button class="send" ng-click="chatroom.send(message); chatroom.reload()">SEND</button>
 </section>
