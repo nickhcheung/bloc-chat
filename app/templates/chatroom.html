@@ -10,6 +10,8 @@
 </section>
 
 <section class="text-bar clearfix column two-thirds">
-  <input type="text" class="message-field" ng-model="message">
-  <button class="send" ng-click="chatroom.send(message); chatroom.reload()">SEND</button>
+  <form ng-submit="chatroom.send(message); chatroom.reload()">
+    <input type="text" class="message-field" ng-model="message">
+    <button class="send" ng-click="chatroom.send(message); chatroom.reload()">SEND</button>
+  </form>
 </section>
