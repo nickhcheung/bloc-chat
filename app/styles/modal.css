@@ -1,21 +1,25 @@
-.modal {
-
-}
-
 .modal-header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
   color: black;
+  text-align: center;
 }
 
 .create-instructions {
-  color: red;
+  color: black;
+  text-align: center;
 }
 
 .text-box {
   color: black;
+  text-align: center;
+  padding-bottom: 3%;
 }
 
 .button-container {
   color: blue;
+  text-align: center;
 }
 
 .button-container .submit {

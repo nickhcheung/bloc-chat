@@ -5,15 +5,14 @@
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 html {
     min-height: 100%;
     font-size: 100%;
-    border: 2px solid orange;
 }
 
 body {
@@ -21,15 +20,16 @@ body {
     font-family: "Open Sans";
     color: black;
     min-height: 100%;
+    overflow: hidden;
 }
 
 .navbar {
     position: relative;
     padding: 1rem;
-    background-color: rgba(242, 242, 242, 0.1);
+    background-color: grey;
     z-index: 2;
-    border: 2px solid red;
     margin: 0;
+    border: 1px solid black;
 }
 
 .navbar .logo {
@@ -58,7 +58,7 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   vertical-align: middle;
-  color: black;
+  color: white;
   font-size: 1rem;
   letter-spacing: 0.05rem;
   font-weight: 700;
@@ -73,8 +73,7 @@ body {
 
 .content-container {
   display: table;
-  border: 2px solid green;
-  height: 100vh;
+  height: 100%;
 }
 
 .column {

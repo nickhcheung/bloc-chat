@@ -1,17 +1,21 @@
 <ng-include src="'templates/sidebar.html'"></ng-include>
 
 <section class="messages-container clearfix column two-thirds">
-  <h1 class="room-header" ng-click="chatroom.checkRoom()">{{ chatroom.currentRoomName }}</h1>
-  <div ng-repeat="message in chatroom.messages" class="repeated">
-    <p class="username">{{ message.username }}</p>
-    <p class="time">{{ message.sentAt | date: "MMM d, y h:mm a" }}</p>
-    <p class="message-content">{{ message.content }}</p>
+  <div class="room-header">
+    <h1 ng-click="chatroom.checkRoom()">{{ chatroom.currentRoomName }}</h1>
+  </div>
+  <div class="messages-list" scroll-glue>
+    <div ng-repeat="message in chatroom.messages" class="repeated">
+      <p class="username">{{ message.username }}</p>
+      <p class="time">{{ message.sentAt | date: "MMM d, y h:mm a" }}</p>
+      <p class="message-content">{{ message.content }}</p>
+    </div>
   </div>
 </section>
 
 <section class="text-bar clearfix column two-thirds">
   <form ng-submit="chatroom.send(message); chatroom.reload()">
-    <input type="text" class="message-field" ng-model="message">
+    <input type="text" class="message-field" ng-model="message" placeholder="Message....">
     <button class="send" ng-click="chatroom.send(message); chatroom.reload()">SEND</button>
   </form>
 </section>

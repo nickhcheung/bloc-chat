@@ -1,17 +1,35 @@
 .room-list {
-  background-color: rgba(255,165,0, 0.2);
-  position: relative;
+  position: fixed;
   float: left;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
-  border: 2px solid yellow;
+  background-color: rgba(180, 180, 180, 1);
+  border: 1px solid grey;
 }
 
 .room {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.room a {
   font-size: 40px;
+  color: black;
+}
+
+.room a:hover {
+  color: red;
 }
 
 .create {
+  font-size: 20px;
+  margin-top: 3%;
+  margin-left: 5%;
   background-color: blue;
   color: white;
+}
+
+.create:hover {
+  background-color: white;
+  color: black;
 }

@@ -1,13 +1,13 @@
 .landing {
-  position: relative;
-  border: 2px solid blue;
+  position: fixed;
+  right: 0;
+  height: 100%;
 }
 
 .hero-content {
   position: relative;
   min-height: 200px;
   z-index: 0;
-  border: 2px solid purple;
 }
 
 .hero-content .hero-title {
@@ -37,7 +37,7 @@
 }
 
 .point {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
 }
 
